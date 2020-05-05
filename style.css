@@ -1,0 +1,68 @@
+
+
+
+body{
+  text-align: center;
+
+ 
+  background-color: rgb(100, 97, 97);
+ margin-top: 7%;
+ margin-bottom: 50%;
+  display: flex;
+  justify-content: center;
+}
+h2{
+  color: rgb(209, 90, 69);
+}
+.form-container{
+ 
+  font-size:25px;
+  background-image: url(BMIbackgroundcrop.jpg);
+  color: aqua;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: content-box;
+    border: 1px black solid;
+    border-width: 50%;
+    border-radius:10px;
+    width: 95%;
+    max-width: 500px;
+    height: 500px;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+  text-align: center;
+}
+input[type=submit]{
+  width: 39%;
+  margin-top: 10%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 12px;
+  border:2px solid palegreen;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: rgb(214, 250, 148);
+}
+input[type=number] {
+  width: 15%;
+  margin-top: 20%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid palegreen;
+}
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+input[type=radio] {
+--active:#275EFE;
+--active-inner: #fff;
+--focus: 2px rgba(39, 94, 254, .25);
+--border: #BBC1E1;
+--border-hover: #275EFE;
+--background: #fff;
+--disabled: #F6F8FF;
+--disabled-inner: #E1E6F9;M 
+}
+}

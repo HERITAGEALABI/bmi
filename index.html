@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+ 
+
+    <title>BMI Calculator</title>
+    </head>
+    <body>
+        <script src="main.js"></script>
+
+        <div class="form-container">
+            <h2>Charlie BMI</h2>
+        <form onsubmit="return calcBMI();">
+            <div class="form">
+            System:
+            <label>
+              <input type="radio" id="bmi-metric" name="bmi-measure" onchange="measureBMI()" checked/> Metric
+            </label>
+            <label>
+              <input type="radio" id="bmi-imperial" name="bmi-measure" onchange="measureBMI()"/> Imperial
+            </label>
+            <br><br>
+       
+            Weight:
+            <input id="bmi-weight" type="number" min="1" max="635" required/> 
+            <span id="bmi-weight-unit">KG</span>
+            <br><br>
+       
+            Height:
+            <input id="bmi-height" type="number" min="54" max="272" required/>
+            <span id="bmi-height-unit">CM</span>
+            <br><br>
+       
+            <input type="submit" value="Calculate BMI"/>
+            <div id="bmi-results"></div>
+
+        </form>
+        </div>
+        </div>
+        </body>
+        </html>
